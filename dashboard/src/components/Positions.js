@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { positions } from "../Data/data.js";
 
 const Positions = () => {
 
@@ -12,7 +11,7 @@ const Positions = () => {
       console.log(res.data);
       setAllPositions(res.data);
     })
-  }, []);
+  }, [backendURL]);
 
   return (
     <>

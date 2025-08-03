@@ -1,10 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useGeneralContext } from "./GeneralContext";
-import axios from "axios";
 
 const Menu = () => {
-  const backendURL = process.env.REACT_APP_BACKEND_URL;
   const frontendURL = process.env.REACT_APP_FRONTEND_URL;
   const { userData, setUserData, toggleSideBar } = useGeneralContext();
   const [selectedMenu, setSelectedMenu] = useState(0);

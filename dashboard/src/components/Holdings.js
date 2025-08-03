@@ -12,7 +12,7 @@ const Holdings = () => {
       // console.log(res.data);
       setAllHoldings(res.data);
     });
-  }, []);
+  }, [backendURL]);
 
   const labels = allHoldings.map((stock) => stock["name"]);
 
