@@ -35,6 +35,7 @@ const Menu = () => {
       <img
         onClick={toggleSideBar}
         src="logo.png"
+        alt="Toggle Icon"
         style={{ width: "50px", cursor: "pointer" }}
       />
 
