@@ -57,7 +57,7 @@ const Dashboard = () => {
     };
 
     checkLogin();
-  }, [backendURL, frontendURL]);
+  }, [backendURL, frontendURL, setUserData]);
 
   if (loading) return <div>Loading...</div>;
 
